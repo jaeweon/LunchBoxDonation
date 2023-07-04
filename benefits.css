@@ -785,108 +785,164 @@ ol, ul {
 /* header */
 
 
-.deal-month{
+
+
+
+.benefit-1{
     display: flex;
-    flex-wrap: wrap;
+    margin-left: 500px;
+    margin-top: 120px;
 }
 
-.deal-month > ul{
-    width: 72%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    margin-bottom: -81px;
-    margin-left: 356px;
+.benefit-1 > div > img{
+    margin-right: 20px;
+    width: 420px;
+    height: 230px;
+}
+
+.benefit-section1{
+    margin-left: -23px;
     text-align: center;
-    line-height: 41px;
-    cursor: pointer;
+    margin-top: 6px;
 }
 
-.deal-month > ul > li{
-    width: 20%; 
-    height: 42px; 
-    border: 1px solid #ccc;
-}
-.deal-month > ul > li > span{
-    padding-left: -10px;
-    font-size: 14px;
-    font-weight: bolder;
-}
-
-.banner-happy-birthday{
-    text-align: center;
-    margin-top: 110px;
-}
-
-.banner-Express-delivery{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-.banner-worry{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-.my-container2 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 5px;
-    margin-left: 384px;
-  }
-  
-  .my-box {
-    border-radius: 10px;
-    width: 250px;
-    height: 379px;
+.benefit-section1-div{
     background-color: white;
-    margin: 15px;
-    overflow:hidden;
-    margin-bottom: 10px;
-  }
-  .my-box > img{
-    height: 250px;
-  }
-  .fast-box{
-    background-image: url("https://www.rankingdak.com/resources/pc/images/txt/txt_badge_dlv.png");
-    background-size: 90px;
-  }
-  .fast-word{
-    word-spacing: 1px;
-    font-size: 14px;
+    height: 200px;
+    width: 860px;
+    position: absolute;
+    top: 1500px;
+    left: 510px;
+}
+
+.benefit-section2-div{
+    background-color: white;
+    height: 80px;
+    width: 900px;
+    position: absolute;
+    top: 940px;
+    left: 502px;
+}
+
+.benefit-sec1{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    word-spacing: -3px;
+}
+.benefit-sec2{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
     font-weight: bolder;
-    color: gray;
-  }
-  .fast-price{
-    margin-top: 14px;
+    color: #999;
+    line-height: 25px;
+}
+
+.benefit-img{
+    display: flex;
+    margin-top: -180px;
+    margin-left: 397px;
+}
+
+.benefit-img > div{
+    margin-left: 15px;
+}
+
+.benefit-img > div > img{
+    width: 140px;
+}
+
+.price{
+    font-size: 18px;
     font-weight: bolder;
-    font-size: 20px;
-  }
-  .fast-price2{
-    font-size: 12px;
-  }
-  .fast-price3{
-    margin-top: 2px;
-    font-size: 12px;
-  }
-  .my-box > a > img{
-      height: 261px;
-  }
+    text-align: left;
+}
 
 
 
 
+.benefit-section2{
+    margin-left: -23px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.benefit-section2-div{
+    background-color: white;
+    height: 200px;
+    width: 860px;
+    position: absolute;
+    top: 2368px;
+    left: 510px;
+}
+
+.benefit-section3-div{
+    background-color: white;
+    height: 80px;
+    width: 900px;
+    position: absolute;
+    top: 940px;
+    left: 502px;
+}
+
+.benefit-sec3{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    word-spacing: -3px;
+}
+.benefit-sec4{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #999;
+    line-height: 25px;
+}
+
+.benefit-img1{
+    display: flex;
+    margin-top: -180px;
+    margin-left: 397px;
+}
+
+.benefit-img1 > div{
+    margin-left: 15px;
+}
+
+.benefit-img1 > div > img{
+    width: 140px;
+}
+
+.price1{
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: left;
+}
 
 
 
 
+.benefit-section4-div{
+    background-color: white;
+    height: 200px;
+    width: 860px;
+    position: absolute;
+    top: 3122px;
+    left: 510px;
+}
 
-
-
-
+.benefit-section3-div{
+    background-color: white;
+    height: 80px;
+    width: 900px;
+    position: absolute;
+    top: 3140px;
+    left: 502px;
+}
 
 
 
