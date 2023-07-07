@@ -52,6 +52,7 @@
     margin-top: 11px;
 }
 
+
 .hamburger{
     background-image: url(https://www.rankingdak.com/resources/pc/images/icon/ico_gnb_all.png);
     width: 38px;
@@ -63,6 +64,7 @@
 .category{
     margin-top: -17px
 }
+
 
 .category-container {
     position: relative;
@@ -807,6 +809,7 @@ ol, ul {
 /* header */
 
 
+
 #items{
     height: 60px;
     width: 500px;
@@ -826,6 +829,7 @@ option{
     width: 100px;
     height: 100px;
 }
+
 
 .item-total{
     text-align: left;
@@ -979,6 +983,7 @@ option{
     background-image: url(https://www.rankingdak.com/resources/pc/images/txt/txt_badge_dlv.png);
 }
 
+
 input[type="radio"] {
     width: 20px;
     height: 20px;
@@ -1099,6 +1104,28 @@ input[type="radio"] {
 .review-content{
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
