@@ -52,6 +52,7 @@
     margin-top: 11px;
 }
 
+
 .hamburger{
     background-image: url(https://www.rankingdak.com/resources/pc/images/icon/ico_gnb_all.png);
     width: 38px;
@@ -63,6 +64,7 @@
 .category{
     margin-top: -17px
 }
+
 
 .category-container {
     position: relative;

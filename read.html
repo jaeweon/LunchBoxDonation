@@ -200,7 +200,9 @@
         <nav id="gnb" class="gnb">
             <ul>
                 <div class="category-container">
+
                     <div class="hamburger"></div>
+
                     <div  class="category" onmouseover="showItems()" >카테고리</div>
                     <div class="items-container" id="itemsContainer" onmouseover="showItems()" onmouseout="hideItems()">
                     <div class="ttt">
@@ -296,7 +298,9 @@
     <div>브랜드관ㅤㅤ<span>맛있닭</span></div><br>
     <div>상품구성ㅤㅤ혼합 10팩 : 오리지널2, 호박2, 고추2, 갈릭2, 야채2</div><br>
     <select id="items">
+
       <option value="">ㅤㅤ상품옵션선택</option>
+
       <option value="item1">오리지널 100g X 10팩<br>17,900원(1팩당 1,790원)</option>
       <option value="item2">오리지널 100g X 30팩<br>(+34,000원)</option>
       <option value="item3">오리지널 100g X 50팩<br>(+68,600원)</option>
@@ -306,6 +310,7 @@
       <option value="item7">호박맛 100g X 50팩(+69,600원)</option>
       <option value="item8">호박맛 100g X 100팩(+153,100원)</option>
     </select>
+
 
     <ul>
         <li>
@@ -378,6 +383,24 @@
 
 </div>
 
+    <style>
+        #items option {
+          white-space: pre-wrap;
+        }
+      </style>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 
@@ -403,7 +426,9 @@
 
 
 <!-- header footer 빈 공간 -->
+
 <div style="height: 200px; background-color: white;"></div>
+
 <!-- header footer 빈 공간 -->
 
 
@@ -483,6 +508,7 @@
         </ul>
     </div>
     </footer>
+
 <!-- footer -->
 <script>
     const radioButtons = document.querySelectorAll('input[type="radio"]');
@@ -504,3 +530,4 @@ function scrollToTop() {
   });
 }
   </script>
+
