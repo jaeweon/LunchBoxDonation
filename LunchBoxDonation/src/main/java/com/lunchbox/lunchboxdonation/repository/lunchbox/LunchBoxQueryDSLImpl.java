@@ -1,8 +1,7 @@
 package com.lunchbox.lunchboxdonation.repository.lunchbox;
 
 import com.lunchbox.lunchboxdonation.domain.lunchbox.LunchBoxDTO;
-import com.lunchbox.lunchboxdonation.entity.Lunchbox.LunchBoxSearch;
-import com.lunchbox.lunchboxdonation.entity.Lunchbox.QLunchBox;
+import com.lunchbox.lunchboxdonation.entity.Lunchbox.*;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.Projections;
 import com.querydsl.core.types.dsl.BooleanExpression;
@@ -17,6 +16,7 @@ import org.springframework.util.StringUtils;
 import java.util.List;
 
 import static com.lunchbox.lunchboxdonation.entity.Lunchbox.QLunchBox.lunchBox;
+import static com.lunchbox.lunchboxdonation.entity.Lunchbox.QLunchBoxOption.lunchBoxOption;
 
 @RequiredArgsConstructor
 @Slf4j
@@ -25,8 +25,8 @@ public class LunchBoxQueryDSLImpl implements LunchBoxQueryDSL {
 
     @Override
     public Page<LunchBoxDTO> lunchBoxList(Pageable pageable, LunchBoxSearch lunchBoxSearch) {
-        log.info("1");
-        BooleanExpression lunchboxTitleContains = StringUtils.hasText(lunchBoxSearch.getLunchBoxTitle()) ? null : lunchBox.lunchboxTitle.contains(lunchBoxSearch.getLunchBoxTitle());
+
+        BooleanExpression lunchboxTitleContains = StringUtils.hasText(lunchBoxSearch.getLunchBoxTitle()) ? lunchBox.lunchboxTitle.contains(lunchBoxSearch.getLunchBoxTitle()) : null;
 
 
         BooleanBuilder builder = new BooleanBuilder();
@@ -34,7 +34,6 @@ public class LunchBoxQueryDSLImpl implements LunchBoxQueryDSL {
         if(lunchboxTitleContains != null){
             builder.or(lunchboxTitleContains);
         }
-        log.info("2");
         final List<LunchBoxDTO> lunchBoxs = query.select(
                 Projections.fields(
                         LunchBoxDTO.class,
@@ -46,9 +45,20 @@ public class LunchBoxQueryDSLImpl implements LunchBoxQueryDSL {
                 )
         ).from(lunchBox)
                 .where(builder)
+                .orderBy(lunchBox.id.desc())
+                .offset(pageable.getOffset())
+                .limit(pageable.getPageSize())
                 .fetch();
-        log.info("3");
+
         final long count = query.select(lunchBox.count()).from(lunchBox).fetchOne();
         return new PageImpl<>(lunchBoxs, pageable,count);
+    }
+
+    @Override
+    public LunchBox lunchBoxDetail(Long id) {
+        return   query.selectFrom(lunchBox)
+                .leftJoin(lunchBox.lunchBoxOptions, lunchBoxOption).fetchJoin()
+                .where(lunchBox.id.eq(id))
+                .fetchOne();
     }
 }

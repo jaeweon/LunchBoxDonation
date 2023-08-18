@@ -26,6 +26,6 @@ public class LunchBoxOption {
     private LocalDateTime modDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "LUNCHBOX_ID", nullable = false)
+    @JoinColumn(name = "lunchBox_id", nullable = false)
     private LunchBox lunchbox;
 }

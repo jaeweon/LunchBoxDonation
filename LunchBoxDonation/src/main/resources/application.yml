@@ -19,10 +19,10 @@ spring:
       ddl-auto: update
 #
 #    #jpa format
-#    properties:
-#      hibernate:
-#        format_sql: true
-#    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
 
   devtools:
     livereload:
@@ -49,5 +49,7 @@ spring:
       max-request-size: 50MB
 #      location: C:/LunchBoxDonation/src/main/resources/static/img/
 
+
 file:
- uploadDir: C:\Users\dlsgh\OneDrive\Desktop\LunchBoxDonation\LunchBoxDonation\LunchBoxDonation\src\main\resources\static\img\
+ uploadDir: C:/LunchBoxDonation/
+

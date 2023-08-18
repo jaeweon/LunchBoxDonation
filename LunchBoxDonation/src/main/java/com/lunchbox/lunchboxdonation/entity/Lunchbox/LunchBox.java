@@ -26,6 +26,9 @@ public class LunchBox extends Timestamp {
 //    @JoinColumn(name = "REVIEW_ID")
 //    private List<Review> review;
 
+    @OneToMany(fetch = FetchType.LAZY)
+    private List<LunchBoxOption> lunchBoxOptions;
+
     @Builder
     public LunchBox(String lunchboxTitle, String lunchboxThumbNailingIMG, Integer price) {
         this.lunchboxTitle = lunchboxTitle;

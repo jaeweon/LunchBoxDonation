@@ -13,6 +13,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @SpringBootTest
 @Slf4j
 @Transactional
@@ -34,6 +36,16 @@ public class LunchBoxTests {
         lunchBox.setPrice(3000);
 
         lunchBoxRepository.save(lunchBox);
+
+    }
+
+    @Test
+    public void findId(){
+        Optional<LunchBox> findLunchBox = lunchBoxRepository.findById(1L);
+
+        findLunchBox.ifPresent(lunchBox -> {
+            log.info(lunchBox.getLunchboxTitle());
+        });
 
     }
 }

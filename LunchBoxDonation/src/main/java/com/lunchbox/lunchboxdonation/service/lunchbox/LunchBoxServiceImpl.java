@@ -11,6 +11,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 @Transactional
@@ -18,12 +20,23 @@ public class LunchBoxServiceImpl implements LunchBoxService {
     private final LunchBoxRepository lunchBoxRepository;
 
     @Override
-    public void lunchBoxInsert(LunchBoxDTO lunchBoxDTO) {
-        lunchBoxRepository.save(toEntity(lunchBoxDTO));
+    public Long lunchBoxInsert(LunchBoxDTO lunchBoxDTO) {
+        return lunchBoxRepository.save(toEntity(lunchBoxDTO)).getId();
     }
 
     @Override
     public Page<LunchBoxDTO> lunchBoxList(Pageable pageable, LunchBoxSearch lunchBoxSearch) {
         return lunchBoxRepository.lunchBoxList(pageable,lunchBoxSearch);
+    }
+
+    @Override
+    public LunchBox getLunchBoxWithOptionByLunchBoxId(Long id) {
+
+        return lunchBoxRepository.lunchBoxDetail(id);
+    }
+
+    @Override
+    public void deleteLunchBoxAndOptionsByLunchBoxId(Long id) {
+        lunchBoxRepository.deleteById(id);
     }
 }

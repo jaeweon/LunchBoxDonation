@@ -26,10 +26,9 @@ public class FileUtils {
 
 
     //단일 파일 저장
-    //@param file : 파일정보, path : static/img 아래에 파일을 저장할 경로
+    //@param file : 파일정보,
     //return : DB에 저장할 파일명
-    public  String uploadFile(MultipartFile file, String path){
-
+    public  String uploadFile(MultipartFile file){
         try {
             //파일 원래 이름
             String originFileName = file.getOriginalFilename();
@@ -39,7 +38,7 @@ public class FileUtils {
             String saveName = UUID.randomUUID().toString() + "." + extension;
 
             //파일 경로 생성
-            Path filePath = Paths.get(commonPath + path + saveName);
+            Path filePath = Paths.get(commonPath + saveName);
             log.info("path : " + filePath.toString());
             //파일 업로드
             File uploadFile = new File(filePath.toString());
@@ -54,5 +53,17 @@ public class FileUtils {
 
         return null;
 
+    }
+
+    //단일 파일 삭제
+    public boolean deleteFile(String fileName){
+        String filePath = commonPath + fileName;
+        File file = new File(filePath);
+
+        if (file.exists()) {
+            return file.delete();
+        }
+
+        return false;
     }
 }
