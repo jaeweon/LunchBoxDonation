@@ -8,15 +8,24 @@
 
 ### 월 구독 도시락 결제
 ### 불 이웃 가정에게 도시락 기부
-![image](https://github.com/jaeweon/LunchBoxDonation/assets/34277606/7c5c1d52-94e1-41e9-aa05-2b33505b2cbf)
+![image](https://github.com/jaeweon/LunchBoxDonation/assets/34277606/765e2ce3-e2ac-4387-a7a0-148041121a2e)
+![image](https://github.com/jaeweon/LunchBoxDonation/assets/34277606/8149a27a-997d-4b5c-b352-fc4e09b3fa51)
+![image](https://github.com/jaeweon/LunchBoxDonation/assets/34277606/e584c050-48d2-438c-bdc2-1e2cc1a2274f)
 
 
-![image](https://github.com/kovengerss/SumSum/assets/34277606/2092a295-0959-45f7-bfe0-7a6979c4dc4f)
-![image](https://github.com/kovengerss/SumSum/assets/34277606/1d7de255-2d48-4082-94ff-f46f37c5da50)
+![image](https://github.com/jaeweon/LunchBoxDonation/assets/34277606/549e6354-af75-4da8-a4e8-7cab7b4b6c86)
+![image](https://github.com/jaeweon/LunchBoxDonation/assets/34277606/ae958be7-44ea-4608-b39d-02ae9d25ea84)
 
 
 
-## 👤 이재원(팀장) 맡은 역할 : Business Tier
+
+
+
+
+
+
+
+## 👤 이재원(팀장) 맡은 역할 : 
 
 # [front-end]
 ### 메인페이지
