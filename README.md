@@ -1,4 +1,4 @@
-# ✔Spring Boot + JPA_ 도란 도란✔
+# ✔Spring Boot + JPA_ 도란 도란✔.
 💘사랑의 도시락 기부 플랫폼 Spring Boot + JPA 프로젝트 By 재사모💘
 
 # 프로젝트 소개   
